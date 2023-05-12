@@ -11,21 +11,3 @@ thể như sau: Mạng gồm ít nhất 03 tầng tích chập hỗn hợp Convo
 + Max Pooling, 02 tầng fully connected với số units phù hợp và tầng quyết định cuối cùng sử dụng softmax. Huấn luyện mô hình bằng tập dữ liệu training sau đó chạy kiểm tra với dữ liệu trong tập validation, test
 
 5) So sánh độ chính xác (sử dụng accuracy, confusion matrix, recall và precision) của các mô hình trong ý 3) và ý 4)
-
-
-inputs = tf.keras.Input(shape=(224, 224, 3))
-x = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), activation='relu')(inputs)
-x = tf.keras.layers.MaxPool2D(2,2)(x)
-x = tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), activation='relu')(inputs)
-x = tf.keras.layers.MaxPool2D(2,2)(x)
-x = tf.keras.layers.Conv2D(filters=128, kernel_size=(3, 3), activation='relu')(inputs)
-x = tf.keras.layers.MaxPool2D(2,2)(x)
-
-x = tf.keras.layers.Dropout(0.2)(x)
-x = tf.keras.layers.Flatten()(x)
-x = tf.keras.layers.Dense(256, activation='relu')(x)
-x = tf.keras.layers.Dense(256, activation='relu')(x)
-outputs = tf.keras.layers.Dense(9, activation='sigmoid')(x)
-
-model = tf.keras.Model(inputs=inputs, outputs=outputs)
-# Aqui aplica la red Neuronal como el Keras, el Dropout para ocultar algunas neuronas.
