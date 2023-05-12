@@ -33,3 +33,7 @@ Tập dữ liệu có kích thước 590x445, tất cả các nhãn dữ liệu 
 - Tất cả ảnh được đặt tên từ "00001.png" đến "00050.png"
 
 # Mô tả mô hình (thư mục model)
+- Mô hình Logistic_regression
+- Mô hình mạng CNN
+
+# Link git: https://github.com/vannt263/classification_fish.git
