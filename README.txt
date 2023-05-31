@@ -32,7 +32,7 @@ Tập dữ liệu có kích thước 590x445, tất cả các nhãn dữ liệu 
 - Tập dữ liệu được sử dụng để kiểm tra mô hình, với mỗi loại cá có 50 ảnh, tôm có 30 ảnh.
 - Tất cả ảnh được đặt tên từ "00001.png" đến "00050.png"
 
-Mô tả cấu trúc thư mục:
+# Mô tả cấu trúc thư mục:
 ## Data:
 +---data: mỗi thư mục con chứa 9 thư mục đại diện cho 9 lớp cá: Black Sea Sprat, Gilt Head Bream, Hourse Mackerel, Red Mullet, Red Sea Bream, Sea Bass,
 |	  Shrimp, Striped Red Mullet, Trout.
