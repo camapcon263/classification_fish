@@ -71,7 +71,7 @@ Tập dữ liệu có kích thước 590x445, tất cả các nhãn dữ liệu 
            kmeans_transfer_learning.ipynb: thuật toán KMeans trên dữ liệu đã phân đoạn kết hợp với kỹ thuật transsfer learning trích xuất đặc trưng.
 
 ## Preprocessing:
-\---preprocessing
++---preprocessing
     +---preprocess
     |       describe.ipynb: mô tả và trực quan dữ liệu 2D và 3D.
     |       fix_image.ipynb: sửa tên và định dạng ảnh.
